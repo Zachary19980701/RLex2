@@ -83,7 +83,7 @@ class Env():
         done = False
         #print('position', self.ob_[0], self.ob_[1], laser)
         if self.goal.conlision(self.angent):
-            reward = 1000
+            reward = 30
             done = True
             done_flag = True
         elif self.wall0.conlision(self.angent):
